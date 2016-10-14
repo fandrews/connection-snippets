@@ -1,0 +1,12 @@
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/ElasticsearchExample.exe.mdb
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/ElasticsearchExample.exe
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/ElasticsearchExample.exe
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/ElasticsearchExample.exe.mdb
+/Users/susa0397/git/test/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/Elasticsearch.Net.dll
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/ElasticsearchExample.exe
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/obj/x86/Debug/ElasticsearchExample.exe.mdb
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/Elasticsearch.Net.dll
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/ElasticsearchExample.exe.mdb
+/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/bin/Debug/ElasticsearchExample.exe

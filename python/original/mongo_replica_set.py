@@ -1,0 +1,16 @@
+import pymongo
+
+settings = {
+    'host': 'iad-c11-1.objectrocket.com:48152,iad-c11-0.objectrocket.com:48152',
+    'database': 'test_db',
+    'username': 'sooz',
+    'password': 'xxxxxxxx',
+    'options': 'replicaSet=99fc32e3c05e03597a692c4fd9a9d162'
+}
+
+try:
+    conn = pymongo.MongoClient("mongodb://{username}:{password}@{host}/{database}?{options}".format(**settings))
+    print "Connected"
+except Exception as ex:
+    print "Error:", ex
+    exit('Failed to connect, terminating.')

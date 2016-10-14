@@ -1,0 +1,8 @@
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/bin/Debug/MongoReplicaSetExample.exe.mdb
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/bin/Debug/MongoReplicaSetExample.exe
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/obj/x86/Debug/MongoReplicaSetExample.exe
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/obj/x86/Debug/MongoReplicaSetExample.exe.mdb
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/bin/Debug/MongoDB.Bson.dll
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/bin/Debug/MongoDB.Driver.Core.dll
+/Users/susa0397/git/test/c#/MongoReplicaSetExample/MongoReplicaSetExample/bin/Debug/MongoDB.Driver.dll

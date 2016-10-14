@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{44ADB2D0-CF73-4943-8472-B5DDA235F536}|Default">
+  <MonoDevelop.Ide.ItemProperties.MongoReplicaSetExample PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MongoReplicaSetExample/Program.cs">
+    <Files>
+      <File FileName="MongoReplicaSetExample/Program.cs" Line="51" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MongoReplicaSetExample" expanded="True">
+            <Node name="MongoReplicaSetExample" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

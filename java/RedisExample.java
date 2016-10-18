@@ -1,5 +1,6 @@
 // Driver Documentation: https://github.com/xetorthio/jedis
 // Assumes you have downloaded the Jedis library to your classpath or added it as a Maven dependency
+// TODO: Get this working using SSL. 
 
 import redis.clients.jedis.*;
 
@@ -18,5 +19,3 @@ public class RedisExample{
             }
      }
 }
-
-// TODO: Get this working Using SSL

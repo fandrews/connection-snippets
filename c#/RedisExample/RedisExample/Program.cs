@@ -14,7 +14,7 @@ namespace RedisExample
 			{
 				var host = "bf36cdba2cc244d5b145f71c6ce4ae72.publb.rackspaceclouddb.com:6379";
 				var password = "CskHfrMmPGvdNxPBFKu4rQfhPvDK33brEJca";
-				// TODO: Connection never completes; just hangs.
+				// TODO: Connection never completes; just hangs. I'm not sure if it's just when using SSL.
 				_client = ConnectionMultiplexer.Connect(host + ",password=" + password ",connectRetry=5,abortConnect=false");
 				Console.WriteLine("redis", _client);
 				//IDatabase db = redis.GetDatabase();

@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{A43CD49C-5FE8-4BDC-8EFD-DD364C4D608B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ElasticsearchExample/Program.cs">
     <Files>
-      <File FileName="ElasticsearchExample/Program.cs" Line="29" Column="3" />
+      <File FileName="ElasticsearchExample/Program.cs" Line="25" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/susa0397/git/connection-snippets/c#/ElasticsearchExample/ElasticsearchExample/Program.cs" line="31" column="32" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ElasticsearchExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

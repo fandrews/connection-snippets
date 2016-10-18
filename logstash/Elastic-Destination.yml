@@ -1,0 +1,8 @@
+# Documentation: https://www.elastic.co/guide/en/logstash/current/plugins-outputs-elasticsearch.html
+
+output {
+  elasticsearch {
+    hosts => "iad1-10600-3.es.objectrocket.com:20600"
+    ssl => "true"
+  }
+}

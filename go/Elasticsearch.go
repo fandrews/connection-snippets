@@ -1,33 +1,27 @@
+// Driver Documentation: https://godoc.org/gopkg.in/olivere/elastic.v3
 // Assumes you have run 'go get gopkg.in/olivere/elastic.v3'
+// TODO: Fix this; always throws an error that no ES nodes are available
 package main
 
 import (
-    "gopkg.in/olivere/elastic.v3"
     "fmt"
+    "gopkg.in/olivere/elastic.v3"
 )
 
-//https://iad1-10538-0.es.objectrocket.com:20538,https://iad1-10538-1.es.objectrocket.com:20538,https://iad1-10538-2.es.objectrocket.com:20538,https://iad1-10538-3.es.objectrocket.com:20538
 func main() {
-    // Host := []string{
-    //     "iad1-10538-0.es.objectrocket.com:20538",
-    //     "iad1-10538-1.es.objectrocket.com:20538",
-    //     "iad1-10538-2.es.objectrocket.com:20538",
-    //     "iad1-10538-3.es.objectrocket.com:20538",
-    // }
-
     const (
-        Host = "iad1-10538-1.es.objectrocket.com:20538"
-        Username = "sooz"
-        Password = "xxxxxxxx"
+        Url      = "https://iad1-10600-2.es.objectrocket.com:20600"
+        Username = "greenarrow"
+        Password = "greenarrow"
     )
 
-    connection_string := fmt.Sprintf("http://%v:%v@%v", Username, Password, Host)
-    client, err := elastic.NewClient(elastic.SetURL(connection_string)) //Accepts multiple hosts as separate arguments
+    _, err := elastic.NewClient(
+        elastic.SetURL(Url),
+        elastic.SetBasicAuth(Username, Password),
+        elastic.SetSniff(false))
     if err != nil {
-        // Handle error
         panic(err)
     }
 
-
-    fmt.Printf("Connected to", client)
+    fmt.Printf("Connected")
 }

@@ -1,3 +1,4 @@
+// Driver Documentation: https://docs.mongodb.com/getting-started/csharp/client/
 ﻿using System;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -6,7 +7,6 @@ namespace MongoReplicaSetExample
 {
 	class MainClass
 	{
-
 		protected static IMongoClient _client;
 		protected static IMongoDatabase _database;
 		protected static IAsyncCursor<BsonDocument> _collections;
@@ -20,8 +20,7 @@ namespace MongoReplicaSetExample
 			string _databaseName = "test_db";
 			string _connectionString = "mongodb://" + _username + ":" + _password + "@" + _hosts + "/" + _databaseName + "?replicaSet=" + _replicaSet;
 
-			// Maybe update connection string to include DB?
-
+			// TODO: Maybe update connection string to include DB?
 			try
 			{
 				_client = new MongoClient(_connectionString);

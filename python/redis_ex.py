@@ -1,3 +1,5 @@
+# Example Dcoumentation:  https://objectrocket.com/docs/redis_python_examples.html (modified)
+# Packge Documentation: https://redis-py.readthedocs.io/en/latest/
 # Ensure you have run 'pip install redis'
 import redis
 

@@ -1,15 +1,15 @@
 // Driver Documentation: https://docs.mongodb.com/ecosystem/drivers/java/
-import java.util.Set;
+import java.util.*;
 import com.mongodb.*;
 
-public class MongoReplicaSetExample {
+public class MongoShardedExample {
 
     public static void main(String[] args) {
-        String host = "iad-c11-1.objectrocket.com:48152,iad-c11-0.objectrocket.com:48152";
+        String host = "iad1-mongos1.objectrocket.com:26215";
         String database = "test_db";
-        String username = "sooz";
-        String password = "xxxxxxxx";
-        String options = "replicaSet=99fc32e3c05e03597a692c4fd9a9d162";
+        String username = "superwoman";
+        String password = "superwoman";
+        String options = "ssl=true";
 
         String connectionString = String.format("mongodb://%s:%s@%s/%s?%s", username, password, host, database, options);
 

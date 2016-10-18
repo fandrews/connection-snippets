@@ -1,3 +1,6 @@
+# Example Documentation: https://objectrocket.com/docs/mongodb_ruby_examples.html
+# Driver Documentation: https://docs.mongodb.com/ruby-driver/master/
+
 # Connecting to a sharded instance using SSL:
 # Make sure to change the port number when using an SSL connection.
 

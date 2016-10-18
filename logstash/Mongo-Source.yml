@@ -1,0 +1,3 @@
+# Uses basic Mongo URI Connection String w/ SSL=true (?)
+
+# https://github.com/phutchins/logstash-input-mongodb"

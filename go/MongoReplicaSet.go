@@ -1,3 +1,5 @@
+// Example Documentation: https://objectrocket.com/docs/mongodb_go_examples.html#connecting-to-a-replica-set
+// Driver Documentation:
 // Assumes you have run 'go get gopkg.in/mgo.v2
 package main
 
@@ -5,7 +7,7 @@ import (
     "fmt"
     "gopkg.in/mgo.v2"
 )
-//TODO: This hangs with the host is bogus. Is there a way to make it timeout?
+
 func main() {
     Host := []string{
         "iad-c11-1.objectrocket.com:48152",
@@ -29,5 +31,3 @@ func main() {
 
     fmt.Printf("Connected to replica set %v!\n", session.LiveServers())
 }
-
-// https://objectrocket.com/docs/mongodb_go_examples.html#connecting-to-a-replica-set

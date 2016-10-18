@@ -1,4 +1,6 @@
-# Ensure you have run 'pip install pymongo'
+# Example Documenetation: https://objectrocket.com/docs/mongodb_python_examples.html#connecting (modified version)
+# Pymonogo Documentation: https://api.mongodb.com/python/current/
+# Assumed you have run 'pip install pymongo'
 import pymongo
 
 settings = {

@@ -1,0 +1,2 @@
+# Uses basic Mongo URI Connectiong String
+# https://www.elastic.co/guide/en/logstash/current/plugins-outputs-mongodb.html

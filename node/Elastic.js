@@ -1,3 +1,6 @@
+// Example Documentation: https://objectrocket.com/docs/elastic_node_examples.html
+// Driver Example: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html
+// Assumes you have run 'npm install elasticsearch'
 var elasticsearch = require('elasticsearch');
 
 var auth = 'sooz:xxxxxxxx';

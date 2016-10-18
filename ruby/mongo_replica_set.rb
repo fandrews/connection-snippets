@@ -1,7 +1,11 @@
-# Connecting to a replica set:
-# The client has auto-discovery that will find all members of the replica set if not all are provided.
+# Example Documentation: https://objectrocket.com/docs/mongodb_ruby_examples.html
+# Driver Documentation: https://docs.mongodb.com/ruby-driver/master/
 
-#!/usr/bin/env ruby
+# Connecting to a replica set:
+# The client has auto-discovery that will find all members of the replica set
+# if not all are provided.
+
+# !/usr/bin/env ruby
 require 'mongo'
 
 # Turn off debug-mode

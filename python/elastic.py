@@ -1,4 +1,5 @@
 # Ensure you have run 'pip install elasticsearch' and 'pip install certifi'
+# Example Documentation: https://objectrocket.com/docs/elastic_python_examples.html (modified version)
 # Docs for elasticsearch package: https://elasticsearch-py.readthedocs.io/en/master/
 # Docs for certifi package: https://pypi.python.org/pypi/certifi
 from elasticsearch import Elasticsearch

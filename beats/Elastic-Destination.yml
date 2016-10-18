@@ -1,0 +1,14 @@
+# Documentation: https://www.elastic.co/guide/en/beats/filebeat/current/elasticsearch-output.html
+output:
+  elasticsearch:
+    # The Elasticsearch cluster
+    hosts: ["https://iad1-10600-3.es.objectrocket.com:20600"]
+
+    # Comment this option if you don't want to store the topology in
+    # Elasticsearch. The default is false.
+    # This option makes sense only for Packetbeat
+    # save_topology: false
+
+    # HTTP basic auth
+    username: "greenarrow"
+    password: "greenarrow"

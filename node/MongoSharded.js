@@ -1,12 +1,20 @@
-
-// Require mongodb
+// Example Documentation: https://objectrocket.com/docs/mongodb_node_examples.html#installation
+// Driver Dcoumentation: https://github.com/mongodb/node-mongodb-native
+// Ensure you have run 'npm install mongodb'
 var MongoClient = require('mongodb').MongoClient;
 
-MongoClient.connect("mongodb://sooz:xxxxxxxx@iad1-mongos0.objectrocket.com:26073/test_db?ssl=true", function(err, db) {
+var username = 'sooz';
+var password = 'xxxxxxxx';
+var host = 'iad1-mongos0.objectrocket.com:26073';
+var database = '/test_db';
+var replicaSet = '99fc32e3c05e03597a692c4fd9a9d162';
+var connectionString = 'mongodb://' + username + ':' + password + '@' + host + database + '?ssl=true';
+
+MongoClient.connect(connectionString, function(err, db) {
   if (err) {
-    console.dir(err);
+    console.log('Error: ', err);
   } else {
-    console.log("Connected!");
+    console.log('Connected!');
     process.exit();
   }
 });

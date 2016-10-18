@@ -1,3 +1,6 @@
+// Example Documentation: https://objectrocket.com/docs/mongodb_node_examples.html#connecting-to-a-sharded-instance-using-ssl
+// Driver Documentation: https://godoc.org/gopkg.in/mgo.v2
+// Assumes you have run 'go get gopkg.in/mgo.v2
 package main
 
 import (
@@ -9,11 +12,9 @@ import (
 
 func main() {
     const (
-      //iad1-mongos0.objectrocket.com:16073
-      //iad1-mongos0.objectrocket.com:26073
-        Host     = "iad1-mongos0.objectrocket.com:16073"
-        Username = "sooz"
-        Password = "xxxxxxxx"
+        Host     = "iad1-mongos1.objectrocket.com:26215"
+        Username = "superwoman"
+        Password = "superwoman"
         Database = "test_db"
     )
 
@@ -22,7 +23,6 @@ func main() {
         Username: Username,
         Password: Password,
         Database: Database,
-        // FIX: SSL doesn't work
         DialServer: func(addr *mgo.ServerAddr) (net.Conn, error) {
             return tls.Dial("tcp", addr.String(), &tls.Config{})
         },

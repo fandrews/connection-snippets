@@ -1,4 +1,4 @@
-// Driver Documentation: https://github.com/ServiceStack/ServiceStack.Redis
+// Driver Documentation: https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/elasticsearch-net.html
 ﻿using System;
 using Elasticsearch.Net;
 
@@ -30,7 +30,7 @@ namespace ElasticsearchExample
 			catch (Exception e) {
 				Console.WriteLine("Error: " + e);
 			}
-			
+
 			Console.WriteLine("Done!");
 		}
 	}

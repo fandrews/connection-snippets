@@ -1,6 +1,7 @@
-// Driver Documentation: https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/elasticsearch-net.html
-﻿using System;
+using System;
+using System.Linq;
 using Elasticsearch.Net;
+using Nest;
 
 
 namespace ElasticsearchExample
@@ -11,23 +12,19 @@ namespace ElasticsearchExample
 
 		public static void Main(string[] args)
 		{
-			var hosts = new[] {
-				new Uri("https://iadd1-s10538-0.es.objectrocket.com:20538"),
-				new Uri("https://iadd1-s10538-1.es.objectrocket.com:20538"),
-				new Uri("https://iadd1-s10538-2.es.objectrocket.com:20538"),
-				new Uri("https://iadd1-s10538-3.es.objectrocket.com:20538")
-			};
-
+			var hostString = "https://ord2-18107-0.es.objectrocket.com:18107,https://ord2-18107-1.es.objectrocket.com:18107,https://ord2-18107-2.es.objectrocket.com:18107,https://ord2-18107-3.es.objectrocket.com:18107";
+			var hosts = hostString.Split(',').Select(x => new Uri(x)).ToArray();
 			try
 			{
+				
 				var connectionPool = new SniffingConnectionPool(hosts);
 				var config = new ConnectionConfiguration(connectionPool)
-					.BasicAuthentication("sooz", "xxxxxxxx");
+					.BasicAuthentication("username", "password");
 				_client = new ElasticLowLevelClient(config);
-				// TODO: Figure out format of a client-level action to trigger actual connection.
-				_client.Ping((PingRequestParameters x, PingRequestParameters y) => x);
+				var result = _client.Search<SearchResponse<object>>(new { size = 12 });
 			}
-			catch (Exception e) {
+			catch (Exception e)
+			{
 				Console.WriteLine("Error: " + e);
 			}
 
